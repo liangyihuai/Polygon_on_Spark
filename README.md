@@ -35,11 +35,12 @@
 - file of polygon shape data: [link https://github.com/liangyihuai/Polygon/blob/master/src/test/data/shapePoints.txt](https://github.com/liangyihuai/Polygon/blob/master/src/test/data/shapePoints.txt)
 
 ## 2. how the algorithms works
+![file3](https://github.com/liangyihuai/Polygon/blob/master/file3.png)
 
 ### overall
 - 1. split an area into grids.
-- 2. find all border grids.
-- 3. find all inside grids.
+- 2. find all border grids. above picture shows what is border girds.
+- 3. find all inside grids. (`inside grids`are what inside the polygon) 
 - 4. iterate all location points, if the location in an inside grid, count it; else if in a border grid, work with traditional way.
 
 ### 总体思路：
