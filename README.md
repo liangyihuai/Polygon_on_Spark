@@ -4,7 +4,7 @@
  
  ***
  ## 1. running the algorithms
- To use the algorithms is simple. Only two kinds of data is needed. One is polygon shape description points, the other is location points.
+ Using the algorithms is simple. Only two kinds of data is needed. One is polygon shape description data, the other is location data.
  ```
  def main(args: Array[String]): Unit = {
     val conf = new SparkConf().setAppName("polygon_contain_point").setMaster("local");
@@ -63,8 +63,7 @@
 2、 遍历所有的网格， 如果该网格不是边界网格且它的中心点在多边形的内部， 就标记为多边形的内部网格。
 
 3、设置变量 count 用于统计在多边形内部的点个数。 遍历所有坐标点，如果该点在内部网格中，就 count++；
-如果在边界网格中，就是用传统方法判断该点是否在多边形中， 如果在多边形内
-部， 就 count++。
+如果在边界网格中，就是用传统方法判断该点是否在多边形中， 如果在多边形内部， 就 count++。
 
 4、 输出 count
 ```
