@@ -1,6 +1,5 @@
-# Polygon-on-Spark
-**This is an algorithms based on Apache Spark, which is for counting all location points which are in the polygon.**
- If you have some big location data (Maybe several TB) and want to count how many of them are inside a polygon. This algorithms may be your choice.
+**An algorithms based on Apache Spark, for counting all location points in a polygon.**
+ If you have some big location data (Maybe several TB) and want to count how many of them are inside a polygon. It is may be your choice.
  
  ***
  ## 1. running the algorithms
